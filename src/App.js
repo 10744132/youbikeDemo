@@ -1,7 +1,6 @@
 import './App.scss';
 import Header from './components/header/Header';
 import SiteData from './pages/sitedata/SiteData';
-import Demo from './demo';
 import Site from './pages/sitedata/Site';
 import {Routes,
   Route} from 'react-router-dom';
