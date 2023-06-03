@@ -1,0 +1,124 @@
+@import "../../App.scss";
+.site{
+    display: flex;
+    flex-direction: column;
+    padding: 32px 124px;
+    gap: 32px;
+    @include mobile(){
+        padding: 24px 32px;
+        gap: 16px;
+    }
+    .title{
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0.18em;
+        color: #B5CC22;
+        display: flex;
+    }
+    .middle{
+        display: flex;
+        .left{
+            display: flex;
+            flex-direction: column;
+            gap: 31px;
+            input{
+                box-sizing: border-box;
+                width: 18px;
+                height: 18px;
+                border: 2px solid #AEAEAE;
+                border-radius: 2px;
+            }
+            label{
+                font-family: 'Noto Sans CJK TC';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+                color: #323232;
+                margin-left: 16px;
+            }
+            .boxes{
+                display: flex;
+                flex-wrap: wrap;
+                @include mobile(){
+                    justify-content: space-around;
+                }
+                .item{
+                    width: 22%;
+                    margin-bottom:31px;
+                    @include mobile(){
+                        width: 33%;
+
+                    }
+                }
+            }
+        }
+        .right{
+            margin-top: 40px;
+            @include mobile(){
+                display: none;
+            }
+        }
+    }
+    table{
+        overflow: hidden;
+        border-radius: 28px;
+        border-collapse: collapse;
+        border: 0.5px solid #AEAEAE;
+        @include mobile(){
+            border-radius: 8px;
+        }
+        thead{
+            background-color: #B5CC22;
+            color: white;
+            font-family: 'Noto Sans CJK TC';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            border-left: #B5CC22;
+        }
+        tbody{
+            tr{
+                &:nth-child(odd){
+                    background-color: #F7F7F7;
+                }
+            }
+        }
+        tr{
+            height: 66px; 
+            border-top: none;
+            border-bottom: none;
+            td{
+                font-family: 'Noto Sans CJK TC';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                min-width: 120px;
+                @include mobile(){
+                    max-width: 35px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    text-align: center;
+
+                }
+            }
+            th{
+                text-align: center;
+
+
+            }
+            @include mobile(){
+                .car ,.null{
+                    display: none;
+                }
+            }
+
+        }
+    }
+}

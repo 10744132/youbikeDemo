@@ -1,0 +1,170 @@
+@import "../../App.scss";
+.selectBar{
+    display: flex;
+    gap: 8px;
+    @include mobile(){
+        flex-direction: column;
+    }  
+    select {  
+        background-color:#F6F6F6;
+        background-image: url(../../img/downGray.png);
+        background-position: right 10px center;
+        background-repeat: no-repeat;
+        background-size: 10px, 10px;
+        border-radius:8px;
+        cursor: pointer;
+        border:none;
+        color: #AEAEAE;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        &::-ms-expand { display: none };
+        option :checked{
+            color: #B5CC22;
+        }
+      }
+      input{  
+        position: relative;
+        background-color:#F6F6F6;
+        background-image: url(../../img/downGray.png);
+        background-position: right 10px center;
+        background-repeat: no-repeat;
+        background-size: 10px, 10px;
+        border-radius:8px;
+        cursor: pointer;
+        border:none;
+        color: #AEAEAE;
+        width: 277px;
+        background-color:#F6F6F6 ;
+        border-radius: 8px;
+        color: #B5CC22;
+        border: none;
+        padding: 10px 21.5px 10px 16px;
+        background-image: url(../../img/searchGreen.png) ;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        &::-ms-expand { display: none };
+
+      }
+      ul{
+        position: absolute;
+        background-color: #F6F6F6;
+        top: 50px;
+        z-index: 1;
+        height: 232px;
+        width: 277px;
+        overflow: scroll;
+        list-style: none;
+        border-radius: 8px;
+        gap: 16px;
+        padding: 16px;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        li{
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+    }
+    .area{
+        width: 175px;
+        height: 40px;
+        color: #AEAEAE;
+        border: none;
+        padding: 10px 21.5px 10px 16px;
+        background-image: url(../../img/downGray.png) ;
+    }
+    .area:hover{
+        width: 175px;
+        height: 40px;
+        color: black;
+        border: none;
+        padding: 10px 21.5px 10px 16px;
+        background-image: url(../../img/downBlack.png) ;
+    }
+    .site{
+        width: 277px;
+        color: #AEAEAE;
+        border: none;
+        padding: 10px 21.5px 10px 16px;
+        background-size: 13.12px, 13.12px;
+        background-image: url(../../img/searchGray.png) ;
+
+    }
+    .site:hover{
+        width: 277px;
+        background-color:#F6F6F6 ;
+        border-radius: 8px;
+        color: #B5CC22;
+        border: none;
+        padding: 10px 21.5px 10px 16px;
+        background-image: url(../../img/searchGreen.png) ;
+
+    }
+   
+    // select{
+    //     cursor: pointer;
+    //     width: 175px;
+    //     height: 40px;
+    //     background-color:#F6F6F6 ;
+    //     border-radius: 8px;
+    //     border: none;
+    //     -moz-appearance:none;
+    //     -webkit-appearance:none;
+    //     appearance: none;
+    //     font-family: 'Noto Sans CJK TC';
+    //     font-style: normal;
+    //     font-weight: 500;
+    //     font-size: 18px;
+    //     line-height: 20px;
+    //     background-position: right 1.0em top 50%, 0 0;
+    //     background-size: 10px, 10px;
+    //     background-repeat: no-repeat, repeat;
+    // }
+    // .area{
+    //     color: #AEAEAE;
+    //     border: none;
+    //     padding: 10px 21.5px 10px 16px;
+    //     background-image: url(../../img/downGray.png) ;
+
+    // }
+    // .area:hover{
+    //     color: black;
+    //     border: none;
+    //     padding: 10px 21.5px 10px 16px;
+    //     background-image: url(../../img/downBlack.png) ;
+    // }
+    // .site{
+    //     position: relative;
+    //     width: 277px;
+    //     color: #AEAEAE;
+    //     border: none;
+    //     padding: 10px 21.5px 10px 16px;
+    //     background-size: 13.12px, 13.12px;
+    //     background-image: url(../../img/searchGray.png) ;
+
+    // }
+    // .site:hover{
+    //     width: 277px;
+    //     background-color:#F6F6F6 ;
+    //     border-radius: 8px;
+    //     color: #B5CC22;
+    //     border: none;
+    //     padding: 10px 21.5px 10px 16px;
+    //     background-image: url(../../img/searchGreen.png) ;
+
+    // }
+}
