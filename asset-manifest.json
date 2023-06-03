@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/107744132.github.io/youbikeDemo/static/css/main.2a93e151.css",
+    "main.js": "/107744132.github.io/youbikeDemo/static/js/main.17ae57eb.js",
+    "static/media/Frame.png": "/107744132.github.io/youbikeDemo/static/media/Frame.24a67e71f1aa2f5f53a0.png",
+    "index.html": "/107744132.github.io/youbikeDemo/index.html",
+    "main.2a93e151.css.map": "/107744132.github.io/youbikeDemo/static/css/main.2a93e151.css.map",
+    "main.17ae57eb.js.map": "/107744132.github.io/youbikeDemo/static/js/main.17ae57eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a93e151.css",
+    "static/js/main.17ae57eb.js"
+  ]
+}
