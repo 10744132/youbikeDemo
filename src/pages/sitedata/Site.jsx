@@ -14,11 +14,11 @@ const Site = () => {
   const [suggestedStations, setSuggestedStations] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false); 
   useEffect(() => {
-    // 获取台北市YouBike实时站点信息的API调用
+
     fetch('https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json')
       .then(response => response.json())
       .then(data => {
-        // 提取縣市清單
+
         const cityList = [...new Set(data.map(item => item.sarea))];
         setCities(cityList);
         // 提取站點清單
@@ -30,7 +30,6 @@ const Site = () => {
   }, []);
 
   useEffect(() => {
-    // 根据输入的站点搜索值，过滤匹配的站点名称作为建议
     const filteredStations = stations.filter(station =>
       station.sna.toLowerCase().includes(stationSearch.toLowerCase()) && (selectedCities.length === 0 || selectedCities.includes(station.sarea))
     );
